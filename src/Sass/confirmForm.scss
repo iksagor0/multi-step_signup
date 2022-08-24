@@ -1,0 +1,87 @@
+#confirmForm {
+    margin-top: 30px;
+    margin-left: 40px;
+    transition: 0;
+    height: 100%;
+    margin-bottom: 40px;
+
+    .formControl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 20px 0;
+        padding-left: 20px;
+        margin: 15px 0;
+
+        label {
+            width: 30%;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .inputContainer {
+            position: relative;
+            width: 70%;
+
+            input {
+                width: 100%;
+                box-shadow: none;
+                background: none;
+                border: none;
+                box-shadow: none;
+                color: rgba(255, 255, 255, 1);
+                font-size: 20px;
+                padding: 10px 20px;
+                height: auto;
+                transition: all 0.35s ease;
+                font-weight: 700;
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:focus {
+                    background: rgba(217, 217, 217, 0.648);
+                    color: rgba(28, 28, 28, 0.8);
+                }
+            }
+
+            span {
+                background: none;
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                font-weight: bold;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.8);
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .termsControl {
+        justify-content: center;
+        gap: 10px;
+
+        .checkbox {
+            min-width: 18px;
+            min-height: 18px;
+            background: none;
+            border: 2px solid #fff;
+            border-radius: 3px;
+        }
+
+        .terms-link {
+            font-weight: bold;
+            text-decoration: 1px solid #fff underline;
+            cursor: pointer;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+}

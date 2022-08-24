@@ -1,0 +1,111 @@
+#signupForm {
+    .step {
+        text-align: right;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .renderArea {
+        .form-step {
+            padding-right: 30px;
+            padding-left: 60px;
+            position: absolute;
+            top: 50%;
+            margin-top: -110px;
+            transform: translateY(30px);
+            width: 100%;
+
+            input {
+                background-color: transparent;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+                font-size: 32px;
+                width: 100%;
+                color: #fff;
+                display: block;
+            }
+
+            input[type="number"] {
+                -moz-appearance: textfield;
+            }
+            label {
+                position: absolute;
+                font-size: 32px;
+                transition: 0.3s;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            p.help-error {
+                font-size: 15px;
+                font-style: italic;
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: bold;
+                padding: 10px 0;
+                text-align: right;
+
+                i {
+                    margin-left: 10px;
+                    font-size: 18px;
+                }
+            }
+            p.help {
+                color: #fff;
+                padding: 10px 0;
+                font-size: 14.5px;
+                text-align: right;
+            }
+        }
+
+        .form-step.focued {
+            label {
+                transition: 0.3s;
+                top: -30px;
+                font-size: 20px !important;
+            }
+        }
+    }
+
+    .button-container {
+        position: absolute;
+        bottom: 80px;
+        right: 30px;
+        text-align: right;
+        width: 100%;
+
+        p {
+            margin-top: 10px;
+        }
+
+        div {
+            display: inline-block;
+            text-align: center;
+            margin-left: 10px;
+
+            button {
+                cursor: pointer;
+                background: #fff;
+                color: #777;
+                padding: 8px 30px !important;
+                border-radius: 30px;
+                font-weight: 700;
+                border: 2px solid #fff;
+                margin-left: 10px;
+                &:hover {
+                    color: #000;
+                }
+            }
+
+            .previous {
+                background: transparent;
+                color: #fff !important;
+
+                &:hover {
+                    background: #fff;
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+}
